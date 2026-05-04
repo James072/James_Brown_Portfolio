@@ -1,0 +1,227 @@
+:root {
+    --gold: #C9A84C;
+    --deep: #0A0A0F;
+    --mid: #12121A;
+    --light: #E8E4D9;
+    --muted: #8A8578;
+    --accent: #1A3A5C;
+}
+
+/* Decorative corner brackets */
+.bracket-wrap {
+    position: relative;
+    padding: 30px 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.bracket-wrap::before,
+.bracket-wrap::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: rgba(201,168,76,0.3);
+    border-style: solid;
+}
+
+.bracket-wrap::before {
+    top: 0; left: 0;
+    border-width: 1px 0 0 1px;
+}
+
+.bracket-wrap::after {
+    bottom: 0; right: 0;
+    border-width: 0 1px 1px 0;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nav-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--light);
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 14px 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    transform: translateX(-101%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.nav-btn:hover {
+    color: var(--deep);
+    border-color: var(--gold);
+}
+
+.nav-btn:hover::before {
+    transform: translateX(0);
+}
+
+/* ── CARDS ── */
+.custom-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 28px 24px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-card:hover {
+  border-color: rgba(201,168,76,0.5);
+  transform: translateY(-4px);
+}
+
+.card-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card-title-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: var(--light);
+  margin-bottom: 16px;
+}
+
+.card-technique {
+  font-family: 'Bebas Neue', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.card-why {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.card-quote {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(232,228,217,0.75);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.gold-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--deep);
+  background: var(--gold);
+  border: none;
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.gold-btn:hover {
+  background: #e0bb5a;
+  transform: translateY(-1px);
+}
+
+.cards-row { 
+    gap: 5px; 
+}
+.prompt-section {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex; 
+}
+.prompt-display {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    text-align: center;
+}
+.prompt-section h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.close-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid rgba(138,133,120,0.4);
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.25s ease;
+}
+.close-btn:hover { 
+    color: var(--light); 
+    border-color: var(--light); 
+}
+/* ── VIDEOS ── */
+.video-wrap {
+  position: relative;
+  background: #000;
+  border: 1px solid rgba(201,168,76,0.2);
+  overflow: hidden;
+}
+
+.video-wrap video {
+  width: 100%;
+  display: block;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.video-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  padding: 8px 12px;
+  background: rgba(10,10,15,0.9);
+  border-top: 1px solid rgba(201,168,76,0.15);
+}
+.video-grid { gap: 20px; }
+.video-section-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.25rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}

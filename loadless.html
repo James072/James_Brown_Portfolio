@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" 
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="transfonter/stylesheet.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <title>James Brown Professional Portfolio - Loadless</title>
+    </head>
+    <body style="background-color: var(--deep);">
+
+        <header>
+            <nav class="nav-buttons d-6">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="education.html" class="nav-btn">Education</a>
+                <a href="technical.html"  class="nav-btn">Website / Technical Projects</a>
+                <a href="resume.html"   class="nav-btn">Resume & Contact Info</a>
+            </nav>
+        </header>
+
+        <img src="images/loadless_logo_700white.gif" alt="logo for downtown diner" class="figure-img img-fluid mx-auto d-block mt-5" 
+            style="width: 400px;">
+
+        <div class="container mt-2">
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+                    <figure class="figure">
+                        <img src="images/react_native_logo.png" alt="react native logo" class="img-fluid" style="width: 1000px;">
+                    </figure>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+                    <figure class="figure">
+                        <img src="images/node_js_logo.png" alt="css logo" class="img-fluid" style="width: 900px;">
+                    </figure>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+                    <figure class="figure">
+                        <img src="images/expo_go_logo.png" alt="javascript logo" class="img-fluid" style="width: 900px;">
+                    </figure>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+                    <figure class="figure">
+                        <img src="images/openai_logo.png" alt="bootstrap framework logo" class="img-fluid" style="width: 55px;">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-1">
+            <p class="mb-3" style="color: var(--light);">
+                The creation of this app was a result of researching the daily challenges faced by those who have been diagnosed with Autism 
+                Spectrum Disorder, level 1, also known as High Functioning Autistic Individuals.  The initial thought came from my own son, 
+                who also has ASD-1, witnessing the challenges he faced growing up. The purpose of the app is to be a daily tool that helps 
+                them navigate the challenging areas of their lives.
+            </p>
+            <p class="mb-3" style="color: var(--light);">
+                The Loadless Neuro Assistant was built to target 3 main areas of daily living in which neurodivergent people experience the 
+                most difficulties:
+                <ul style="color: var(--light);">
+                    <li>Cognitive Load - Dealing with the initiation and completion of daily tasks</li>
+                    <li>Social Load - Involves dealing with human interactions in a work or social setting</li>
+                    <li>Emotional &amp; Sensory Load - Dealing with intense emotions caused by being overly 
+                        stimulated due to environmental conditions
+                    </li>
+                </ul>
+            </p>
+            <p class="mb-3" style="color: var(--light);">
+                The impact to the life of an HFA individual appears as:<br>
+                <ul style="color: var(--light);">
+                    <li>Procrastination; being stuck on simple tasks</li>
+                    <li>Feelings of being "left behind" in conversations</li>
+                    <li>Difficulties with networking and building relationships</li>
+                    <li>Having intense emotional responses to small stressors</li>
+                </ul>
+            </p>
+
+            <p class="text-center" style="color: var(--light)">
+                Loadless Neuro Assistant is designed with mobile-first development in mind, to be a tool that helps HFA individuals manage the 
+                challenges they face daily. Here's how it works:  
+            </p>
+            <p class="text-center" style="color: var(--light);">
+                The user presses one of three buttons - "Calm", "Okay" or "Overwhelmed" - to input their current state of being.
+            </p>
+            <img src="images/loadless/loadless_stButtons.JPG" alt="Buttons for the Loadless Neuro Assistant app"
+                class="figure-img img-fluid mx-auto d-block mb-5" style="width: 500px;"/>
+
+            <p class="text-center" style="color: var(--light);">
+                The app then prompts the user to input a brief description of what they are experiencing, which can be typed, spoken through 
+                voice-to-text, or text extracted from an image of a handwritten note or computer screen to be input.
+            </p>
+            <img src="images/loadless/Loadless_input500.gif" alt="Input fields for the Loadless Neuro Assistant app"
+                class="figure-img img-fluid mx-auto d-block mb-5"/>
+
+            <p class="text-center" style="color: var(--light);">
+                The user's state and the user's description is sent through to the etd Pipeline, which then starts the 3 base prompt engines to process
+                the input and determine the prompt engine that should respond.  Once determined, the response from one or more of the base prompt 
+                engines is sent to the fusion engine prompt which determines the final output that is sent to the user's screen.
+            </p>
+            <img src="images/loadless/backend_diagram.png" alt="diagram of the backend architecture for the Loadless Neuro Assistant app"
+                class="figure-img img-fluid mx-auto d-block mb-5" style="width: 550px;"/>
+        </div>
+
+        <!-- Videos -->
+        <h2 class="text-center" style="color: var(--gold);">App Demo Videos</h2>
+
+        <!-- Row 1: Cognitive -->
+        <div class="row justify-content-center mt-5 video-grid gx-3 mb-4">
+            <div class="col-xl-3 col-md-6">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/social_1.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">COGNITIVE LOAD — DEMO 1</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mt-3 mt-md-0">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/social_2.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SOCIAL LOAD — DEMO 2</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mt-3 mt-md-0">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/sensory_2.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SENSORY LOAD — DEMO 2</p>
+                </div>
+            </div>
+            </div>
+            <div class="row justify-content-center video-grid gx-3 mb-5">
+            <div class="col-xl-1 col-md-6 mt-3 mt-md-0">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/cognitive_2.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">COGNITIVE LOAD — DEMO 2</p>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-6">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/social_1.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SOCIAL LOAD — DEMO 1</p>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-6 mt-3 mt-md-0">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/social_2.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SOCIAL LOAD — DEMO 2</p>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-6">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/sensory_1.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SENSORY LOAD — DEMO 1</p>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-6 mt-3 mt-md-0">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/sensory_2.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">SENSORY LOAD — DEMO 2</p>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-6">
+                <div class="video-wrap">
+                <video controls>
+                    <source src="images/loadless/panic_1.mp4" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="video-label">PANIC/CRISIS — DEMO</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="mt-5 text-center" style="color: var(--gold);">
+                James J Brown III <span class="gold-dot">|</span> Full Stack Developer <span class="gold-dot">|</span> Professional Portfolio
+            </p>
+        </footer>
+    </body>
+</html>
